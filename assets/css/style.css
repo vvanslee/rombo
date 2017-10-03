@@ -1,0 +1,94 @@
+.main-container {
+	width: 80%;
+	margin-top: 10%;
+	margin-left: 10%;
+}
+
+.projContainer {
+    position: -webkit-sticky;  // required for Safari
+    position: sticky;
+    top: 0; // required as well.
+}
+
+#projImg {
+	width: 100%;
+}
+
+.media-button {
+	width: 30px;
+	clear: both;
+	float: right;
+}
+
+.membContainer {
+	margin-top: 5%;
+}
+
+.membHolder {
+	margin-bottom: 20px !important;
+	position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.membHolder:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
+img.membImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+.title {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 80%;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease;
+}
+
+.membHolder:hover .title {
+  top: 10%;
+}
+
+.memButton {
+  position: absolute;
+	width: 20%;
+  top: 70%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.memButton a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+}
+
+.membHolder:hover .memButton {
+  opacity: 1;
+}
+
+
